@@ -17,8 +17,7 @@ class Employee < ActiveRecord::Base
   private
   def generate_password
     alphabet_array = [*'a'..'z', *'A'..'Z', *'0'..'9']
-    password = alphabet_array.sample(8).join('')
-    self.password = password
+    self.password = alphabet_array.sample(8).join('')
   end
   
 end
