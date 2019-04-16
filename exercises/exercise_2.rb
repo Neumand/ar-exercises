@@ -10,5 +10,3 @@ puts "----------"
 @store2 = Store.find_by(id: 2)
 @store1.name = "King's Canyon"
 @store1.save
-
-binding.pry
